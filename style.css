@@ -483,6 +483,7 @@ body{
     cursor: pointer;
     transition: .5s;
     background: #E67514;
+    border-radius: 10px;
 }
 
 .preview-btn:hover {
