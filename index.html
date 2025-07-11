@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link href=style.css rel="stylesheet" >
+</head>
+<body>
+    
+<!-- navbar -->
+<nav class="navbar">
+    <ul class="link-group">
+        <li class="link active"><a href="#">home</a></li>
+        <li class="link"><a href="#">projects</a></li>
+        <li class="link"><a href="#">about</a></li>
+        <li class="link"><a href="#">contact</a></li>
+    </ul>
+</nav>
+
+<!-- home section -->
+<section class="home-section active">
+    <h1 class="hero-heading">hello, i am <br> Kiran </h1>
+    <img src="img/home.png" class="home-img" alt="">
+</section>
+
+<!-- project section -->
+<section class="project-section">
+    <h1 class="project-heading">some of my projects</h1>
+    <div class="project-container"> 
+        <div class="project-card">
+            <img src="img/project-1.png" class="project-img" alt="">
+            <div class="project-content">
+                <h1 class="project-title">WeatherApplication</h1>
+                <p class="project-info">
+                    A modern, responsive weather app that shows real-time weather data for any city worldwide. Built with HTML, CSS, and JavaScript, it fetches live data from the OpenWeatherMap API and presents it with a clean user interface and weather-specific visuals.
+                </p>
+                <div class="project-btn-grp">
+                    <button class="project-btn github" onclick="window.open('https://github.com/Mannem-Kiran-Kumar/WeatherApplication', '_blank')">github repo</button>
+                    <button class="project-btn live" onclick="window.open('https://mannem-kiran-kumar.github.io/WeatherApplication/', '_blank')">see live</button>
+                </div>
+            </div>
+        </div>
+        <div class="project-card">
+            <img src="img/project-2.png" class="project-img" alt="">
+            <div class="project-content">
+                <h1 class="project-title">Disney + Hotstar</h1>
+                <p class="project-info">
+                    A responsive clone of Disney+ Hotstar built with HTML, CSS, and JavaScript, featuring a sleek UI and interactive movie cards.
+This project demonstrates my frontend skills and attention to modern web design.
+                </p>
+                <div class="project-btn-grp">
+                    <button class="project-btn github" onclick="window.open('https://github.com/Mannem-Kiran-Kumar/Disney-Hotstar-Clone.git', '_blank')">github repo</button>
+                    <button class="project-btn live" onclick="window.open('https://mannem-kiran-kumar.github.io/Disney-Hotstar-Clone/', '_blank')">see live</button>
+                </div>               
+            </div>
+        </div>
+        <div class="project-card">
+            <img src="img/project-3.png" class="project-img" alt="">
+            <div class="project-content">
+                <h1 class="project-title">🏧 ATM</h1>
+                <p class="project-info">
+                    A desktop-based ATM simulation system built using Java Swing. Includes login, balance inquiry, deposit, withdrawal, and transaction features.
+                </p>
+                <div class="project-btn-grp">
+                    <button class="project-btn github" onclick="window.open('https://github.com/Mannem-Kiran-Kumar/AtmManagementSystem', '_blank')">GitHub Repo</button>
+                    <button class="project-btn live" onclick="openVideo()">▶ See Demo</button>
+                </div>        
+            </div>
+        </div>
+
+        <!-- 🎬 Fullscreen Video Overlay -->
+        <div id="videoOverlay" class="video-overlay" onclick="closeVideo()">
+            <video id="demoVideo" controls autoplay onclick="event.stopPropagation()">
+            <source src="assets/video/atm-demo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div class="project-card">
+            <img src="img/project-444.png" class="project-img" alt="">
+            <div class="project-content">
+                <h1 class="project-title">🎮 Simon Game</h1>
+                <p class="project-info">
+                    A fun and interactive memory game built using HTML, CSS, and JavaScript, inspired by the classic Simon Game.
+It                  challenges users to repeat an increasingly long sequence of colors and sounds, testing their memory skills.
+                </p>
+                <div class="project-btn-grp">
+                    <button class="project-btn github" onclick="window.open('https://github.com/Mannem-Kiran-Kumar/Simon-Game', '_blank')">github repo</button>
+                    <button class="project-btn live" onclick="window.open('https://mannem-kiran-kumar.github.io/Simon-Game/', '_blank')">see live</button>
+                </div>               
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- about section -->
+<section class="about-section">
+    <div class="about">
+        <div class="about-img-container">
+            <img src="img/aboutcv.png" class="about-img" alt="">
+            <button class="download-cv-btn">downlaod cv</button>
+        </div>
+        <p class="about-info">Hi, I'm Kiran, a driven and detail-oriented full-stack web developer with a passion for crafting dynamic, responsive, and user-centric web applications. I specialize in developing both the front-end and back-end of modern web solutions using technologies like Java, Spring Boot, HTML, CSS, JavaScript, React, and MySQL.
+
+My journey into development began with a curiosity to understand how things work behind the screen, which has grown into a deep enthusiasm for building real-world applications. I've successfully completed projects such as a, Weather App, Portfolio Website and an ATM Management System, each designed with a focus on usability, performance, and clean code practices.
+
+In addition to coding, I’m a strong believer in clean UI/UX design and smooth functionality. I enjoy solving complex problems, collaborating with others, and continuously learning new tools and frameworks to stay current in the ever-evolving tech landscape.
+
+I'm open to internships, freelance opportunities, or full-time roles where I can contribute meaningfully while continuing to grow as a developer. When I’m not coding, you’ll find me exploring tech blogs, testing out new development tools, or learning about system design and deployment strategies.
+
+Let’s connect and build something great together!</p>
+    </div>
+
+    <!-- skills -->
+<div class="skill-section">
+    <h1 class="heading">skills</h1>
+    <div class="skills-container">
+        <div class="skill-card">
+            <img src="img/java-original.svg" class="skill-img" alt="">
+            <div class="skill-level">98%</div>
+            <h1 class="skill-name">Java</h1>
+            <!-- <p class="skill-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, delectus!</p> -->
+        </div>
+        <div class="skill-card">
+            <img src="img/html.png" class="skill-img" alt="">
+            <div class="skill-level">98%</div>
+            <h1 class="skill-name">HTML</h1>
+            <!-- <p class="skill-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, delectus!</p> -->
+        </div>
+        <div class="skill-card">
+            <img src="img/css.png" class="skill-img" alt="">
+            <div class="skill-level">98%</div>
+            <h1 class="skill-name">CSS</h1>
+            <!-- <p class="skill-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, delectus!</p> -->
+        </div>
+        <div class="skill-card">
+            <img src="img/js.png" class="skill-img" alt="">
+            <div class="skill-level">98%</div>
+            <h1 class="skill-name">JS</h1>
+            <!-- <p class="skill-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, delectus!</p> -->
+        </div>
+        <div class="skill-card">
+            <img src="img/reactjs.png" class="skill-img" alt="">
+            <div class="skill-level">98%</div>
+            <h1 class="skill-name">React.js</h1>
+            <!-- <p class="skill-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, delectus!</p> -->
+        </div>
+        <div class="skill-card">
+            <img src="img/mysql-original.svg" class="skill-img" alt="">
+            <div class="skill-level">98%</div>
+            <h1 class="skill-name">MySQL</h1>
+            <!-- <p class="skill-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, delectus!</p> -->
+        </div>
+    </div>
+
+</div>
+
+<!-- timeline -->
+<div class="timeline">
+    <h1 class="heading">education and experience</h1>
+    <div class="card">
+        <div class="card-body">
+            <h3 class="card-title">Secondary School Certificate (SSC)</h3>
+            <p class="card-detail">
+            School: Govt Boys High School, Satyavedu
+            <br><br>
+            GPA: 8.5
+            <br><br>
+            Year: June 2018 – March 2019
+        </p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-body">
+            <h1 class="card-title">Web Development Intern</h1>
+            <p class="card-detail">
+                Company: ExcelR EdTech Pvt. Ltd.<br><br>
+                Duration: June 2024 – July 2025<br><br>
+                Completed a 6-week internship on Web Development and JavaScript in collaboration with APSCHE and JNTUA.
+            </p><br>
+            <button class="preview-btn" data-image="img/webdev.png">View</button>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-body">
+            <h1 class="card-title">Diploma in Electronics and Communication Engineering</h1>
+            <p class="card-detail">
+            College: Guntur Engineering College
+            <br><br>
+            CGPA: 8.6
+            <br><br>
+            Year: June 2019 – June 2022
+        </p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-body">
+            <h1 class="card-title">Full Stack Developer Intern</h1>
+            <p class="card-detail">
+                Company: Blackbuck Engineers<br><br>
+                Duration: January 2025 – March 2025<br><br>
+                Completed a 240-hour long-term internship in Full Stack Development in association with APSCHE.<br>
+                Gained hands-on experience building responsive and user-friendly web applications using HTML, CSS, JavaScript, React, and SQL.
+            </p><br>
+            <button class="preview-btn preview-btn2" data-image="img/fullstack.png">View</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-body">
+            <h1 class="card-title">B.Tech in Computer Science and Engineering</h1>
+            <p class="card-detail">
+            College: Sri Venkateswara Engineering College
+            <br><br>
+            CGPA: 7.7
+            <br><br>
+            Year: September 2022 – May 2025
+            </p>
+        </div>
+    </div>
+    <!-- Modal Preview -->
+    <div id="image-modal" class="modal">
+        <img id="modal-img" src="" alt="Preview">
+    </div>
+</div>
+</section>
+
+<!-- contact section -->
+<section class="contact-section">
+    <form class="contact-form" action="https://formsubmit.co/ecce08cfd82c70b914c2007e1f9d8f3b" method="POST">
+        <input type="text" name="name" id="name" autocomplete="off" placeholder="name" required>
+        <input type="email" name="email" id="email" autocomplete="off" placeholder="email" required>
+        <textarea name="msg" id="msg" placeholder="message" autocomplete="off" required></textarea>
+
+        <button type="submit" class="form-submit-btn">Contact</button>
+    </form>
+
+    <!-- map -->    
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d948676.2184460011!2d77.29740988540915!3d12.859684956507062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e1!3m2!1sen!2sin!4v1751784701008!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</section>
+
+
+<script src="app.js"></script>
+</body>
+</html>
